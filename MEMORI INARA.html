@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reading is Therapy</title>
+  <link rel="stylesheet" href="CSS/MEMORI INARA.css"/>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="IMG/HIGHFI-removebg-preview.png" alt="Logo RIN" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="HOME.html">HOME</a></li>
+          <li><a href="ABOUT.html">ABOUT</a></li>
+          <li><a class="active" href="TOP5.html">TOP 5 NOVEL</a></li>
+          <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    </div>
+
+    <div class="social-icons">
+      <a href=" https://my.shp.ee/SwZ8dta" target="_blank">
+        <img src="IMG/HIGHFI (16).png" alt="Shopee">
+      </a>
+      <a href=" https://www.instagram.com/ciksara_aisha?igsh=bnllc3YyODduNHl1" target="_blank">
+        <img src="IMG/HIGHFI (13).png" alt="Instagram">
+      </a>
+      <a href=" https://www.tiktok.com/@ciksara_aisha?_t=ZS-8xaMwFgcios&_r=1" target="_blank">
+        <img src="IMG/HIGHFI (15).png" alt="TikTok">
+      </a>
+    </div>
+	<div class="book-image">
+    <img src="IMG/MEMORI.png" alt="Lelaki Astatine">
+  </div>
+      </p>
+      <h2>MEMORI INARA by</h2>
+      <h3> SARA AISHA </h3>
+
+      ><div class="stars">
+        ⭐ ⭐ ⭐ ⭐ ☆
+      </div>
+      <a href="TOP5.html" class="back-btn">BACK</a>
+
+  <div class="review">
+	  <p>
+      Memori Inara by Sara Aisha was a captivating blend of psychological suspense and emotional depth that kept me intrigued from beginning to end. The story follows Esha, who wakes up with no memory of the past four years, only to discover she is married to a mysterious man named Gibran Lutfi. I was drawn to the way the author slowly unraveled the truth behind Esha’s lost memories, blending romance, mystery, and subtle supernatural elements. Gibran’s quiet strength and loyalty added a protective layer to the story, while Esha’s emotional journey felt raw and relatable. The recurring nightmares and hidden past kept the tension high, and I found myself constantly second-guessing what was real. However, I did feel that some of the plot twists—especially those involving stalker elements and scientific explanations—were slightly overwhelming and distracted from the emotional core. Still, Memori Inara was a haunting and memorable read, perfect for those who enjoy romance with a dark, mysterious edge.
+
+    </p>
+
+   <div class="gallery">
+  <img src="IMG/WhatsApp Image 2025-06-30 at 14.09.49_9bf25173.jpg" class="popup-img" alt="Bag 1">
+  <img src="IMG/WhatsApp Image 2025-06-30 at 14.09.48_8a3c923f.jpg" class="popup-img" alt="Bag 2">
+  <img src="IMG/WhatsApp Image 2025-06-30 at 14.09.48_6fd3810a.jpg" class="popup-img" alt="Bag 3">
+</div>
+
+<!-- Pop-up modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const imgs = document.querySelectorAll(".popup-img");
+  const span = document.getElementsByClassName("close")[0];
+
+  imgs.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+

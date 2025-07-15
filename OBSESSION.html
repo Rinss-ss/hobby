@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reading is Therapy</title>
+  <link rel="stylesheet" href="CSS/OBSESSION.css"/>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="IMG/HIGHFI-removebg-preview.png" alt="Logo RIN" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="HOME.html">HOME</a></li>
+          <li><a href="ABOUT.html">ABOUT</a></li>
+          <li><a class="active" href="TOP5.html">TOP 5 NOVEL</a></li>
+          <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    </div>
+
+    <div class="social-icons">
+      <a href=" https://my.shp.ee/n3BvYUM" target="_blank">
+        <img src="IMG/HIGHFI (16).png" alt="Shopee">
+      </a>
+      <a href=" https://www.instagram.com/rehanmakhtar?igsh=MWl1aXdqdGdiM3VjNg==" target="_blank">
+        <img src="IMG/HIGHFI (13).png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@rehanmakhtar?_t=ZS-8xaMoznG4tr&_r=1" target="_blank">
+        <img src="IMG/HIGHFI (15).png" alt="TikTok">
+      </a>
+    </div>
+	<div class="book-image">
+    <img src="IMG/HIGHFI (10).png" alt="Lelaki Astatine">
+  </div>
+      </p>
+      <h2>OBJECTION by REHAN</h2>
+      <h3> MAKHTAR </h3>
+
+      ><div class="stars">
+        ⭐ ⭐ ⭐ ⭐ ☆
+      </div>
+      <a href="TOP5.html" class="back-btn">BACK</a>
+
+  <div class="review">
+	  <p>
+      Objection by Rehan Makhtar is an emotionally intense novel that explores the toxic effects of grief, revenge, and misunderstanding through the story of Zafiq and Aira. Zafiq, blinded by past pain, treats Aira harshly, believing she is connected to a tragedy in his life. Despite being mistreated, Aira remains strong, showing quiet resilience that becomes the emotional core of the story. The novel highlights how unhealed trauma can distort love, and how forgiveness is never simple. With poetic language and strong character development, Rehan delivers a story that is painful, moving, and ultimately about healing and redemption.
+    </p>
+
+  <div class="gallery">
+  <img src="IMG/WhatsApp Image 2025-06-30 at 14.09.46_61d0403a.jpg" class="popup-img" alt="Bag 1">
+  <img src="IMG/WhatsApp Image 2025-06-30 at 14.09.47_366d901d.jpg" class="popup-img" alt="Bag 2">
+  <img src="IMG/WhatsApp Image 2025-06-30 at 14.09.47_bd2d9383.jpg" class="popup-img" alt="Bag 3">
+</div>
+
+<!-- Pop-up modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const imgs = document.querySelectorAll(".popup-img");
+  const span = document.getElementsByClassName("close")[0];
+
+  imgs.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
