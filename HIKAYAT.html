@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reading is Therapy</title>
+  <link rel="stylesheet" href="CSS/HIKAYAT.css"/>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="IMG/HIGHFI-removebg-preview.png" alt="Logo RIN" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="ABOUT.html">ABOUT</a></li>
+          <li><a class="active" href="TOP5.html">TOP 5 NOVEL</a></li>
+          <li><a href="CONTACT.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://my.shp.ee/hKH8Zgk " target="_blank">
+        <img src="IMG/HIGHFI (16).png" alt="Shopee">
+      </a>
+      <a href=" https://www.instagram.com/evafterinkwell?igsh=MXVkdzI2ajY1ZzRyMA==" target="_blank">
+        <img src="IMG/HIGHFI (13).png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@elvrosethrone?_t=ZS-8xaMjKL2MiI&_r=1" target="_blank">
+        <img src="IMG/HIGHFI (15).png" alt="TikTok">
+      </a>
+    </div>
+	<div class="book-image">
+    <img src="IMG/HIKAYAT.png" alt="Lelaki Astatine">
+  </div>
+      </p>
+      <h2>HIKAYAT  ALLEREDNIC by </h2>
+      <h3> ELVROSETH </h3>
+      <div class="stars">
+        ⭐ ⭐ ⭐ ⭐ ⭐ 
+      </div>
+      <a href="TOP5.html" class="back-btn">BACK</a>
+
+  <div class="review">
+	  <p>
+      Hikayat Allerednic by Elvroseth was an intense and emotionally gripping read that completely pulled me into its dark, twisted version of the Cinderella tale. The story of Qurratun Nafella, a girl trapped in a cruel household and forced into marriage with Luqman Al-Fareel, was both heartbreaking and empowering. I was especially drawn to Nafella’s transformation from a helpless victim into a strong, determined woman who learns to take control of her own fate. Luqman’s character development also stood out—watching him evolve from arrogant and entitled to fiercely protective made their relationship all the more compelling. The novel blends psychological thriller, action, and romance in a way that feels bold and unique. However, I did find that some parts of the story felt a bit drawn out, especially towards the end. Still, the morally grey characters, emotional intensity, and haunting atmosphere made this novel a memorable experience for me.
+    </p>
+
+  <div class="gallery">
+  <img src="IMG/WhatsApp Image 2025-06-29 at 19.01.36_9a8c97e6.jpg" class="popup-img" alt="Bag 1">
+  <img src="IMG/WhatsApp Image 2025-06-29 at 19.00.12_ce344a9c.jpg" class="popup-img" alt="Bag 2">
+  <img src="IMG/WhatsApp Image 2025-06-29 at 20.14.50_5448ebe7.jpg" class="popup-img" alt="Bag 3">
+</div>
+
+<!-- Pop-up modal -->
+<div id="imgModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+<script>
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const imgs = document.querySelectorAll(".popup-img");
+  const span = document.getElementsByClassName("close")[0];
+
+  imgs.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
