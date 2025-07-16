@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading is Therapy</title>
+  <link rel="stylesheet" href="CSS/TOP 5 NOVEL CSS.css">
+</head>
+<body>
+    <header>
+  <div class="nav-container">
+    <div class="logo">
+  <img src="IMG/HIGHFI-removebg-preview.png" alt="Logo RIN">
+</div>
+    <nav>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="ABOUT.html">ABOUT</a></li> <!-- ⬅️ class active di sini -->
+    <li><a class="active" href="TOP5.html">TOP 5 NOVEL</a></li>
+    <li><a href="CONTACT.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+	
+
+  <h1 class="title">Choose Your Novel!</h1>
+
+  <div class="slider-container">
+    <button id="prevBtn" class="nav-btn">&#8249;</button>
+
+    <div class="slider" id="slider">
+      <a href="LELAKI ASTATINE.htm"><div class="book"><img src="IMG/LELAKI ASTATINE.png"><p>LELAKI ASTATINE</p></div></a>
+      <a href="HIKAYAT.html"><div class="book"><img src="IMG/HIKAYAT.png"><p>HIKAYAT ALLEREDNIC</p></div></a>
+      <a href="OBSESSION.html"><div class="book"><img src="IMG/HIGHFI (10).png"><p>OBJECTION</p></div></a>
+      <a href="MEMORI INARA.html"><div class="book"><img src="IMG/MEMORI.png"><p>MEMORI INARA</p></div></a>
+      <a href="BAYANG SOFEA.html"><div class="book"><img src="IMG/BAYANG.png"><p>BAYANG SOFEA</p></div></a>
+    </div>
+	  
+	  
+<p id="tagline"> </p>
+
+    <button id="nextBtn" class="nav-btn">&#8250;</button>
+  </div>
+
+  <script>
+    const books = document.querySelectorAll('.slider a .book');
+    let centerIndex = 2;
+
+    function updateSlider() {
+      books.forEach((book, index) => {
+        book.classList.remove('center');
+        if (index === centerIndex) {
+          book.classList.add('center');
+        }
+      });
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      centerIndex = (centerIndex - 1 + books.length) % books.length;
+      updateSlider();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      centerIndex = (centerIndex + 1) % books.length;
+      updateSlider();
+    });
+
+    updateSlider();
+  </script>
+	
+</body>
+</html>
+
+<div class="quote-section">
+  “A reader lives a thousand lives before he dies.” – George R.R. Martin
+</div>
