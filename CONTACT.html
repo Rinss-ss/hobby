@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading is Therapy</title>
+  <link rel="stylesheet" href="CSS/CONTACT.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <nav class="nav-container">
+      <div class="logo">
+        <img src="IMG/HIGHFI-removebg-preview.png" alt="Logo RIN" />
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="ABOUT.html">ABOUT</a></li>
+        <li><a href="TOP5.html">TOP 5 NOVEL</a></li>
+        <li><a class="active" href="CONTACT.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <section class="contact-section">
+  <div class="left-side">
+    <div class="left-contact">
+      <h1>Get In Touch!</h1>
+      <p><em>Don't be shy to say hi - even if it's just about your favourite book</em></p>
+    </div>
+
+    <div class="social-links">
+      <a href="mailto:nrsxfiey@gmail.com" target="_blank">
+        <img src="IMG/12.png" alt="Gmail"> nrsxfiey@gmail.com
+      </a>
+      <a href="https://instagram.com/nrsxf_" target="_blank">
+        <img src="IMG/HIGHFI (13).png" alt="Instagram"> nrsxf_
+      </a>
+      <a href="https://tiktok.com/@nrsxf_" target="_blank">
+        <img src="IMG/HIGHFI (15).png" alt="TikTok"> nrsxf_
+      </a>
+      <a href="https://www.wattpad.com/user/nrsxfiey" target="_blank">
+        <img src="IMG/13.png" alt="Wattpad"> nrsxfiey
+      </a>
+    </div>
+  </div>
+
+  <div class="right-contact">
+    <h2>Send a Message</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- SIMPLE JS POPUP -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Message sent! Thank you for reaching out.");
+    this.reset();
+  });
+</script>
